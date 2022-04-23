@@ -67,6 +67,3 @@ def main():
         'test_4': test_4,
     }
     return list_returns
-
-
-print(main())
