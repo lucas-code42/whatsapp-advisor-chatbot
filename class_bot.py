@@ -1,4 +1,4 @@
-from numpy import array
+import pyautogui
 import requests
 import pywhatkit
 import time
@@ -62,5 +62,10 @@ class Bot:
                 j = 0
                 pywhatkit.sendwhatmsg(self.contacts[j], self.msg, datetime.now().hour, datetime.now().minute + 2)
                 del self.contacts[0]
+                time.sleep(10)
+                pyautogui.FAILSAFE = False
+                a, b = pyautogui.size()
+                pyautogui.moveTo(a, b)
+                pyautogui.press('enter')
                 time.sleep(10)
 

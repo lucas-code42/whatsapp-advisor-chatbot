@@ -22,6 +22,8 @@ if __name__ == '__main__':
             print("encerrando aplicação...")
             break
         else:
+            print()
+            print(test_integration)
             print("Todos os testes obtiveram exito, aplicação irá iniciar.")
 
         bot_obj = Bot()
@@ -53,4 +55,4 @@ if __name__ == '__main__':
         else:
             send_msg = bot_obj.send_msg_to_contacts()
     
-    run += 1
+        run += 1
