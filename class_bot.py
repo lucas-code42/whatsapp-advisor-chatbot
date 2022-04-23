@@ -1,3 +1,4 @@
+from numpy import array
 import requests
 import pywhatkit
 import time
