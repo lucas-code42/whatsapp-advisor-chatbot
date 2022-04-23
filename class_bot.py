@@ -54,3 +54,13 @@ class Bot:
         self.contacts = arr
         return self.contacts
 
+    def send_msg_to_contacts(self,):
+        while len(self.contacts) >= 1:
+            for i in range(len(self.contacts)):
+                if len(self.contacts) == 0:
+                    break
+                j = 0
+                pywhatkit.sendwhatmsg(self.contacts[j], self.msg, datetime.now().hour, datetime.now().minute + 2)
+                del self.contacts[0]
+                time.sleep(10)
+

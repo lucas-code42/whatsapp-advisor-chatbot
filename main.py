@@ -1,9 +1,11 @@
 from class_bot import Bot
 from test_class_bot import main
 
+
 if __name__ == '__main__':
 
-    while True:
+    run = 0
+    while run == 0:
 
         test_integration = main()
         validation = None
@@ -50,3 +52,5 @@ if __name__ == '__main__':
             print(number_list)
         else:
             send_msg = bot_obj.send_msg_to_contacts()
+    
+    run += 1
